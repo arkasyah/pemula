@@ -1,0 +1,191 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #5f8d4e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #e5d9b6;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+.btn-cta {
+  border: none;
+  background-color: #285430;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-cta:hover {
+  background-color: #e5d9b6;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #e5d9b6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.arka-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+}
+
+.parallax {
+  background-image: url("assets/img/Arka2.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.tentang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.card-description {
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 4px;
+}
+.card-item {
+  width: 25%;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: black;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  padding: 4px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #5f8d4e;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    gap: 0;
+  }
+  .card-item {
+    width: 100%;
+    opacity: 0.9;
+  }
+  .container {
+    padding: 0;
+  }
+
+  .intro {
+    margin-top: 20px;
+  }
+
+  .arka-img {
+    padding: 0;
+  }
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    background-color: #5f8d4e;
+    width: 100%;
+    padding: 0;
+  }
+}
